@@ -15,8 +15,8 @@
          --cor3:#6B2020;
          --cor4:#B80000;
          --fonte-padrao: arial,verdana,helvetica;
-         --fonte-destaque:'Bebas Neue', cursiva;
-         --fonte-android: 'android', cursiva;
+         --fonte-destaque:'Bebas Neue';
+         --fonte-android: 'android' ;
          }
 
 * {
@@ -60,7 +60,8 @@ main a {
 header {
         background-image:linear-gradient(to bottom,var(--cor1), VAR(--cor2)) ;
         min-height: 150px;
-        text-align: center;
+        height: 157px;
+        
 }
 
 header > h1 {
@@ -70,6 +71,7 @@ header > h1 {
         padding-top: 10px;
         padding-bottom: 15px;
         text-shadow: 2px 2px 0px black;
+        text-align: center;
 }
 
 header > p { 
@@ -126,8 +128,9 @@ main {
      border-radius: 20px;
      min-width: 200px;
      max-width: 800px;
-     margin: auto;
-}
+     margin: auto ;
+    }
+     
 
 main h1{
     font-family: var(--fonte-android);
@@ -195,4 +198,20 @@ footer {
     text-align: center;
     font-size: 1.5em;
 }
-                             
+ 
+#ol>img{
+    width: 50px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+section{
+    text-align: left;
+    display: inline-block ;
+    position: relative;
+    top: -125px;
+}
+section>a>img:hover{
+        border: 3px solid white;
+        transform: translate(5px,5px);
+}
